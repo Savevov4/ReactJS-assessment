@@ -20,3 +20,50 @@ console.log(person("Jill", "Wilson"));
 - Call the function from another file.
 - Replace the object with an array.
 - Add a return statement before the first curly brace.
+
+#### 2. Which of these terms commonly describes React applications ?
+- declarative &#10004;
+- integrated
+- closed
+- imperative
+
+#### 4. Which attribute do you use to replace innerHTML in the browser DOM ?
+- injectHTML
+- dangerouslySetInnerHTML &#10004;
+- weirdSetInnerHTML
+- strangeHTML
+
+#### 5. What can you use to handle code splitting ?
+- React.split
+- React.memo
+- React.fallback
+- React.lazy &#10004;
+
+#### 6. To create a constant in Javascript, which keyword do you use ?
+- const &#10004;
+- var
+- constant
+- var
+
+#### 7. How do you destructure the properties that are sent to the Dish component ?
+```js
+-    function Dish(props) {
+        return <h1>{props.name} {props.cookingTime}</h1>
+    }
+
+-    function Dish({name, cookingTime}) { 
+        return <h1>{name} {cookingTime}</h1>
+    } &#10004;
+
+-    function Dish(...props) {
+        return <h1>{props.name} {props.cookingTime}</h1>
+    }
+
+-    function Dish([name, cookingTime]) {
+        return <h1>{name} {cookingTime}</h1>
+    }
+
+-    function Dish(props) {
+        return <h1>{name} {cookingTime}</h1>
+    }
+```
