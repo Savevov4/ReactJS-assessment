@@ -53,7 +53,7 @@ console.log(person("Jill", "Wilson"));
 
 -    function Dish({name, cookingTime}) { 
         return <h1>{name} {cookingTime}</h1>
-    } // &#10004;
+    } // <<< CORRECT
 
 -    function Dish(...props) {
         return <h1>{props.name} {props.cookingTime}</h1>
@@ -67,3 +67,27 @@ console.log(person("Jill", "Wilson"));
         return <h1>{name} {cookingTime}</h1>
     }
 ```
+
+#### 8. What do you call a React component that catches Javascript errors anywhere in the child component tree ?
+- error bases
+- error catches
+- error helpers
+- error boundaries  &#10004;
+
+#### 9. In which lifecycle method do you make requests for data in a class component ?
+- constructor
+- componentDidMount  &#10004;
+- componentWillReceiveProps
+- componentWillMount
+
+#### 10. React components are composed to create a user interface. How are components composed ?
+- by putting them in the same file
+- by nesting components &#10004;
+- with webpack
+- with code splitting
+
+#### 11. All React components must act like ____ with respect to their props.
+- monads
+- pure functions
+- recursive functions
+- higher-order functions &#10004;
