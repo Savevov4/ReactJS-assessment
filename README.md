@@ -178,4 +178,32 @@ const topics = ["cooking", "art", "history"]
 - const [, first]["cooking", "art", "history"]
 - const [first] = ["cooking", "art", "history"] &#10004;
 
-#### 22. 
+#### 22. How do you handle passing through the component tree without having to pass props down manually at every level?
+- React Send
+- React Pinpoint
+- React Router
+- React Context &#10004;
+
+#### 23. What is the name of the tool used to take JSX and turn it into createElement calls?
+- JSX Editor
+- ReactDOM
+- Browser Buddy
+- Babel &#10004;
+
+#### 24. Which props from the props object is available to the component with the following syntax?
+```js
+<Message {...props}/>
+```
+- any that have not changed
+- all of them &#10004;
+- child props
+- any that have changed
+
+#### 25. Consider the following code from React Router. What do you call :id in the path prop?
+```js
+<Route path="/:id" />
+```
+- This is a route modal
+- This is a route parameter &#10004;
+- This is a route splitter
+- This is a route link
