@@ -8,7 +8,7 @@ React.JS Assessment from Linkedin
 - to process files
 
 #### 2. How do you fix the syntax error that results from running this code ?
-```
+```js
 const person = (firstName, lastName) => 
         {
             first: firstName,
