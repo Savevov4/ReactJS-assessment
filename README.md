@@ -207,3 +207,59 @@ const topics = ["cooking", "art", "history"]
 - This is a route parameter &#10004;
 - This is a route splitter
 - This is a route link
+
+#### 26. What does this React element look like given the following function?
+```js
+React.createElement( 
+    "h1",
+    null,
+    "What's happening?"
+);
+```
+- <h1 props={null}>What's happenning?</h1>
+- <h1 id="component">What's happening?</h1>
+- <h1>What's happening?</h1> &#10004;
+- <h1 id="element">What's happening?</h1>
+
+#### 27. What property do you need to add to the Suspense component in order to display a spinner or loading state?
+```js
+function MyComponent() {
+    return (
+        <Suspense>
+            <div>
+                <Message />
+            </div>
+        </Suspense>
+    );   
+}
+```
+- lazy
+- loading
+- fallback &#10004;
+- spinner
+
+#### 28. What do you call the message wrapped in curly braces below?
+```js
+let message = "Hi there";
+const element = <p>{message}</p>
+```
+- a JS function
+- a JS element
+- a JS expression &#10004;
+- a JSX wrapper
+
+#### 29. When do you use useLayoutEffect?
+- to optimize for all devices
+- to complete the update
+- to change the layout of the screen
+- when you need the browser to paint before the effect runs &#10004;
+
+#### 30. What is the difference between the click behaviors of these two buttons (assuming that this.handleClick is binded correctly)?
+```js
+A. <button onClick="{this.handleClick}>Click Me</button>"
+B. <button onClick="{event => this.handleClick()event}}>Click Me</button>"
+```
+- Button A will not have access to the event object on click of the button.
+- Button B will not fire the handler this.handleClick successfully.
+- Button A will not fire the handler this.handleClick successfully.
+- There is no difference
