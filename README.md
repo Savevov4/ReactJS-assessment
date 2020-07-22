@@ -159,6 +159,6 @@ const person = { name, age }
 console.log(person)
 ```
 - {{name: "Rachel", age: 31}}
-- {name: "Rachel", age: 31} <<<<<--CORRECT
+- {name: "Rachel", age: 31} &#10004;
 - {person: "Rachel", person: 31}}
 - {person: {name: "Rachel", age: 31}}
