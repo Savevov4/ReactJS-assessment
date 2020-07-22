@@ -117,3 +117,48 @@ console.log(animal);
 - undefined
 - Cat &#10004;
 - Horse
+
+#### 14. Why might you use a ref ?
+- to directly access to DOM node &#10004;
+- to refer to another JS file
+- to call a function
+- to bind the function
+
+#### 15. Why might you use useReducer over useState in a React component.
+- when you need to manage more complex state in an app &#10004;
+- when you want to replace Redux
+- when you want to improve performance
+- when you want to break your production app
+
+#### 16. If you want to import just the Component from the React library, what syntax do you use?
+- import React.Component from 'react'
+- import [ Component ] from 'react'
+- import Component from 'react'
+- import { Component } from 'react' &#10004;
+
+#### 17. If a function component should always render the same way given the same props, what is a simple performance optimization available for it?
+- Wrap it in the React.memo higher-order component. &#10004;
+- Implement the useReducer Hook.
+- Implement the useMemo Hook.
+- Implement the shouldComponentUpdate lifecycle method.
+
+#### 18. If you see the following import in a file, what is being used for state management in the component?
+```js
+import React, {useState} from 'react';
+```
+- React Hooks &#10004;
+- stateful components
+- math
+- class components
+
+#### 19. Using object literal enhancement, you can put values back into and object. When you log person to the console, what is the output?
+```js
+const name = "Rachel";
+const age = 31;
+const person = { name, age }
+console.log(person)
+```
+- {{name: "Rachel", age: 31}}
+- {name: "Rachel", age: 31} <<<<<--CORRECT
+- {person: "Rachel", person: 31}}
+- {person: {name: "Rachel", age: 31}}
