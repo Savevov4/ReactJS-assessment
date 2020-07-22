@@ -53,7 +53,7 @@ console.log(person("Jill", "Wilson"));
 
 -    function Dish({name, cookingTime}) { 
         return <h1>{name} {cookingTime}</h1>
-    } &#10004;
+    } // &#10004;
 
 -    function Dish(...props) {
         return <h1>{props.name} {props.cookingTime}</h1>
