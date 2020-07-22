@@ -1,2 +1,2 @@
 # ReactJS-assessment
-React.JS Assessment from Linkedin
+## React.JS Assessment from Linkedin
