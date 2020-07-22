@@ -162,3 +162,20 @@ console.log(person)
 - {name: "Rachel", age: 31} &#10004;
 - {person: "Rachel", person: 31}}
 - {person: {name: "Rachel", age: 31}}
+
+#### 20. What is the testing library most often associated with React?
+- Mocha
+- Chai
+- Sinon
+- Jest &#10004;
+
+#### 21. To get the first item from the array ("cooking") using array destructuring, how do you adjust this line?
+```js
+const topics = ["cooking", "art", "history"]
+```
+- const first = ["cooking", "art", "history"]
+- const [] = ["cooking", "art", "history"]
+- const [, first]["cooking", "art", "history"]
+- const [first] = ["cooking", "art", "history"] &#10004;
+
+#### 22. 
