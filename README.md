@@ -91,3 +91,29 @@ console.log(person("Jill", "Wilson"));
 - pure functions
 - recursive functions
 - higher-order functions &#10004;
+
+#### 12. If you created a component called Dish and rendered it to the DOM, what type of element would be rendered ?
+```js
+function Dish() {
+    return <h1>Mac and Cheese</h1>
+}
+
+ReactDOM.render(
+    <Dish />,
+    document.getElementById('root')
+);
+```
+- h1 &#10004;
+- section
+- component
+- div
+
+#### 13. What should the console read when the following code is run ?
+```js
+const [, , animal] = ["Horse", "Mouse", "Cat"];
+console.log(animal);
+```
+- Mouse
+- undefined
+- Cat &#10004;
+- Horse
