@@ -216,10 +216,10 @@ React.createElement(
     "What's happening?"
 );
 ```
-- ```js<h1 props={null}>What's happenning?</h1>```
-- ```js<h1 id="component">What's happening?</h1>```
-- ```js<h1>What's happening?</h1>``` &#10004;
-- ```js<h1 id="element">What's happening?</h1>```
+- ```html<h1 props={null}>What's happenning?</h1>```
+- ```html<h1 id="component">What's happening?</h1>```
+- ```html<h1>What's happening?</h1>``` &#10004;
+- ```html<h1 id="element">What's happening?</h1>```
 
 
 #### 27. What property do you need to add to the Suspense component in order to display a spinner or loading state?
