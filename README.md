@@ -260,6 +260,6 @@ A. <button onClick="{this.handleClick}>Click Me</button>"
 B. <button onClick="{event => this.handleClick()event}}>Click Me</button>"
 ```
 - Button A will not have access to the event object on click of the button.
-- Button B will not fire the handler this.handleClick successfully.
+- Button B will not fire the handler this.handleClick successfully. &#10004;
 - Button A will not fire the handler this.handleClick successfully.
 - There is no difference
