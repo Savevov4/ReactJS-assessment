@@ -263,3 +263,38 @@ B. <button onClick="{event => this.handleClick()event}}>Click Me</button>"
 - Button B will not fire the handler this.handleClick successfully. &#10004;
 - Button A will not fire the handler this.handleClick successfully.
 - There is no difference
+
+#### 30. When might you use React.PureComponent?
+- when you do not want your component to have props
+- when you have sibling components that need to be compared
+- when you want to implement shouldComponentUpdate() by default to not update unnecessarily &#10004;
+- when you do not want your component to have state
+
+#### 30. Why is it important to avoid copying the values of props into a component's state where possible?
+- because you should never mutate state
+- because getDerivedStateFromProps() is an unsafe method to use
+- because you want to allow a component to update in response to changes in the props &#10004;
+- because you want to allow data to flow back up to the parent
+
+#### 30. What is the children prop?
+- a property that adds child components to state
+- a property that lets you pass components as data to other components &#10004;
+- a property that lets you set an array as a property
+- a property that lets you pass data to child elements
+
+#### 31. A representation of a user interface that is kept in memory and is synced with the "real" DOM is called what?
+- virtual DOM &#10004;
+- DOM
+- virtual elements
+- shadow DOM
+
+#### 32. You have written the following code but nothing is rendering. How do you fix this problem?
+```js
+const Heading = () => {
+    <h1>Hello!</h1>
+};
+```
+- Add a render function
+- Change the curly braces to parentheses or add a return statement before the h1 tag. &#10004;
+- Move the h1 to another component.
+- Surround the h1 in a div.
