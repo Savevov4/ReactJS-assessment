@@ -318,17 +318,11 @@ const Star = ({ selected = false }) => (
 
 #### 35. You have added a style property to the h1 but there is an unexpected token error when it runs. How do you fix this?
 ```js
-const element = <h1 style={ backgroundColor: "blue" }>Hi</h1>;
+- const element = <h1 style={ backgroundColor: "blue" }>Hi</h1>;
 ```
 ```js
-const element = <h1 style="backgroundColor: "blue""}>Hi</h1>;
-```
-```js
-const element = <h1 style={{backgroundColor: "blue"}}>Hi</h1>;
-```
-```js
-const element = <h1 style={blue}>Hi</h1>;
-```
-```js
-const element = <h1 style="blue">Hi</h1>;
+- const element = <h1 style="backgroundColor: "blue""}>Hi</h1>;
+- const element = <h1 style={{backgroundColor: "blue"}}>Hi</h1>; // <<< CORRECT
+- const element = <h1 style={blue}>Hi</h1>;
+- const element = <h1 style="blue">Hi</h1>;
 ```
