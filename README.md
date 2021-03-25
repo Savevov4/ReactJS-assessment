@@ -393,3 +393,35 @@ class Ticker extends React.component {
     <p>Our staff is available 9-5 to answer your questions</p>
   </Frag>
 ```
+
+#### 40. You have created a new method in a class component called handleClick, but it is not working. Which code is missing?
+```js
+class Button extends React.Component{
+  constructor(props) {
+    super(props);
+    // Missing line
+  }
+  handleClick() {...}
+}
+```
+- this.handleClick.bind(this);
+- props.bind(handleClick);
+- this.handleClick.bind();
+- this.handleClick = this.handleClick.bind(this); &#10004;
+
+#### 41. Which choice will not cause a React component to rerender?
+- if the component calls this.setState(...)
+- the value of one of the component's props changes
+- if the component calls this.forceUpdate()
+- one of the component's siblings rerenders &#10004;
+
+#### 42. What will happen when this useEffect Hook is executed, assuming name is not already equal to John?
+```js
+useEffect(() => {
+  setName("John");
+}, [name]);
+```
+- It will cause an error immediately.
+- It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.
+- It will update the value of name once and not run again until name is changed from the outside. &#10004;
+- It will cause an infinite loop.
