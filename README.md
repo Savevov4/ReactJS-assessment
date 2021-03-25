@@ -425,3 +425,27 @@ useEffect(() => {
 - It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.
 - It will update the value of name once and not run again until name is changed from the outside. &#10004;
 - It will cause an infinite loop.
+
+#### 43. Which library does the fetch() function come from?
+- FetchJS
+- ReactDOM
+- No library. fetch() is supported by most browsers. &#10004;
+- React
+
+#### 44. Which answer best describes a function component?
+
+- A function component is the same as a class component.
+- A function component accepts a single props object and returns a React element. &#10004;
+- A function component is the only way to create a component.
+- A function component is required to create a React component.
+
+#### 45. Currently, handleClick is being called instead of passed as a reference. How do you fix this?
+```js
+<button onClick={this.handleClick()}>Click this</button>
+```
+```js
+- <button onClick={this.handleClick.bind(handleClick)}>Click this</button>
+- <button onClick={handleClick()}>Click this</button>
+- <button onClick={this.handleClick}>Click this</button> // <<< CORRECT
+- <button onclick={this.handleClick}>Click this</button>
+```
