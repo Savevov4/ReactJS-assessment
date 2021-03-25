@@ -307,5 +307,5 @@ const Star = ({ selected = false }) => (
 ```
 - black
 - red
-- grey &#10004
+- grey &#10004;
 - white 
