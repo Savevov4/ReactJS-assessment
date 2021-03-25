@@ -298,3 +298,14 @@ const Heading = () => {
 - Change the curly braces to parentheses or add a return statement before the h1 tag. &#10004;
 - Move the h1 to another component.
 - Surround the h1 in a div.
+
+#### 33. Consider the following component. What is the default color for the star?
+```js
+const Star = ({ selected = false }) => (
+  <Icon color = {selected ? "red" : "grey"} />
+);
+```
+- black
+- red
+- grey &#10004
+- white 
