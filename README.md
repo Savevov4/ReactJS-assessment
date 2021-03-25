@@ -309,3 +309,9 @@ const Star = ({ selected = false }) => (
 - red
 - grey &#10004;
 - white 
+
+#### 34. Which function is used to update state variables in a React class component?
+- replaceState
+- refreshState
+- updateState
+- setState &#10004;
