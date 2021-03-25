@@ -326,3 +326,70 @@ const element = <h1 style={ backgroundColor: "blue" }>Hi</h1>;
 - const element = <h1 style={blue}>Hi</h1>;
 - const element = <h1 style="blue">Hi</h1>;
 ```
+
+#### 36. In the following code block, what type is orderNumber?
+```js
+ReactDOM.render(
+  <Message orderNumber="16"/>,
+  document.getElementById("root")
+);
+```
+- string &#10004;
+- boolean
+- object
+- number
+
+#### 37. Per the following code, when is the Hello component displayed?
+```js
+const greeting = isLoggedIn ? <Hello /> : null;
+```
+- never
+- when isLoggedIn is true &#10004;
+- when a user logs in
+- when the Hello function is called
+
+#### 38. If you wanted to display the count state value in the component, what do you need to add to the curly braces in the h1?
+```js
+class Ticker extends React.component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+  render() {
+    return <h1>{}</h1>
+  }
+ }
+  ```
+- this.state.count &#10004;
+- count
+- state
+- state.count
+
+#### 39. React does not render two sibling elements unless they are wrapped in a fragment. Below is one way to render a fragment. What is the shorthand for this?
+```js
+<React.Fragment>
+  <h1>Our Staff</h1>
+  <p>Our staff is available 9-5 to answer your questions</p>
+</React.Fragment>
+```
+```js
+- <...>
+    <h1>Our Staff</h1>
+    <p>Our staff is available 9-5 to answer your questions</p>
+  </...>
+
+- <//>
+    <h1>Our Staff</h1>
+    <p>Our staff is available 9-5 to answer your questions</p>
+  <///>
+
+- <>
+    <h1>Our Staff</h1>
+    <p>Our staff is available 9-5 to answer your questions</p>
+  </>
+
+- <Frag>
+    <h1>Our Staff</h1>
+    <p>Our staff is available 9-5 to answer your questions</p>
+  </Frag>
+```
