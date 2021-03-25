@@ -386,7 +386,7 @@ class Ticker extends React.component {
 - <>
     <h1>Our Staff</h1>
     <p>Our staff is available 9-5 to answer your questions</p>
-  </>
+  </> // <<< CORRECT
 
 - <Frag>
     <h1>Our Staff</h1>
