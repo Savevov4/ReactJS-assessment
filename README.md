@@ -325,7 +325,7 @@ const element = <h1 style="backgroundColor: "blue""}>Hi</h1>;
 ```
 ```js
 const element = <h1 style={{backgroundColor: "blue"}}>Hi</h1>;
-``` &#10004;
+```
 ```js
 const element = <h1 style={blue}>Hi</h1>;
 ```
