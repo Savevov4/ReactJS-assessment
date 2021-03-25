@@ -88,9 +88,9 @@ console.log(person("Jill", "Wilson"));
 
 #### 11. All React components must act like ____ with respect to their props.
 - monads
-- pure functions
+- pure functions &#10004;
 - recursive functions
-- higher-order functions &#10004;
+- higher-order functions 
 
 #### 12. If you created a component called Dish and rendered it to the DOM, what type of element would be rendered ?
 ```js
@@ -449,3 +449,119 @@ useEffect(() => {
 - <button onClick={this.handleClick}>Click this</button> // <<< CORRECT
 - <button onclick={this.handleClick}>Click this</button>
 ```
+
+#### 46. What value of button will allow you to pass the name of the person to be hugged?
+```js
+class Huggable extends React.Component {
+  hug(id) {
+    console.log("hugging " + id);
+  }
+
+  render() {
+    let name = "kitteh";
+    let button = // Missing Code
+    return button;
+  }
+}
+```
+```js
+- <button onClick={(name) => this.hug(name)>Hug Button</button> // <<< CORRECT
+- <button onClick={this.hug(e, name)}>Hug Button</button>
+- <button onClick={(e) => hug(e, name)}>Hug Button</button>
+- <button onClick={(e) => this.hug(name, e)}>Hug Button</button>
+```
+
+#### 47. How do you invoke setDone only when component mounts, using hooks?
+```js
+function MyComponent(props) {
+  const [done, setDone] = useState(false);
+
+  return <h1>Done: {done}</h1>;
+}
+```
+- useEffect(() => { setDone(true); });
+- useEffect(() => { setDone(true); }, []); // <<< CORRECT
+- useEffect(() => { setDone(true); }, [setDone]);
+- useEffect(() => { setDone(true); }, [done, setDone]);
+
+#### 48. What can you use to wrap Component imports in order to load them lazily?
+
+- React.fallback
+- React.split
+- React.lazy &#10004;
+- React.memo
+
+#### 49. Which Hook could be used to update the document's title?
+
+- useEffect(function updateTitle() { document.title = name + ' ' + lastname; }); &#10004;
+- useEffect(() => { title = name + ' ' + lastname; });
+- useEffect(function updateTitle() { name + ' ' + lastname; });
+- useEffect(function updateTitle() { title = name + ' ' + lastname; });
+
+#### 50. What do you need to change about this code to get it to run?
+```js
+class clock extends React.Component {
+  render() {
+    return <h1>Look at the time: {this.props.time}</h1>;
+  }
+}
+```
+- Add quotes around the return value
+- Remove this
+- Remove the render method
+- Capitalize clock &#10004;
+
+#### 51. How do you set a default value for an uncontrolled form field?
+
+- Use the value property.
+- Use the defaultValue property. &#10004;
+- Use the default property.
+- It assigns one automatically.
+
+#### 52. What package contains the render() function that renders a React element tree to the DOM?
+
+- React
+- ReactDOM &#10004;
+- Render
+- DOM
+
+#### 53. Why is it a good idea to pass a function to setState instead of an object?
+
+- It provides better encapsulation.
+- It makes sure that the object is not mutated.
+- It automatically updates a component.
+- setState is asynchronous and might result in out of sync values. &#10004;
+
+#### 54. What is sent to an Array.map() function?
+
+- a callback function that is called once for each element in the array &#10004;
+- the name of another array to iterate over
+- the number of times you want to call the function
+- a string describing what the function should do
+
+#### 55. What is the name of this component?
+```js
+class Clock extends React.Component {
+  render() {
+    return <h1>Look at the time: {time}</h1>;
+  }
+}
+```
+- Clock &#10004;
+- It does not have a name prop.
+- React.Component
+- Component
+
+#### 56. What is [e.target.id] called in the following code snippet?
+
+- a computed property name
+- a set value
+- a dynamic key &#10004;
+- a JSX code string
+ 
+#### 57. Why might you use a ref?
+
+- to directly access the DOM node &#10004;
+- to refer to another JS file
+- to call a function
+- to bind the function
