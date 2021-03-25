@@ -320,7 +320,7 @@ const Star = ({ selected = false }) => (
 ```js
 const element = <h1 style={ backgroundColor: "blue" }>Hi</h1>;
 ```
-- const element = <h1 style="backgroundColor: "blue""}>Hi</h1>;
-- const element = <h1 style={{backgroundColor: "blue"}}>Hi</h1>; &#10004;
-- const element = <h1 style={blue}>Hi</h1>;
-- const element = <h1 style="blue">Hi</h1>;
+- ```jsconst element = <h1 style="backgroundColor: "blue""}>Hi</h1>;```
+- ```jsconst element = <h1 style={{backgroundColor: "blue"}}>Hi</h1>;``` &#10004;
+- ```jsconst element = <h1 style={blue}>Hi</h1>;```
+- ```jsconst element = <h1 style="blue">Hi</h1>;```
